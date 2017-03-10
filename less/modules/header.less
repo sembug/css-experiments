@@ -2,14 +2,9 @@ html {
     background-color: #fff;
 }
 
-section,
-footer {
-    display: none;
-}
-
 body {
-    background-color: #eeeeee;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color: #000;
+    font-family:  Arial, Helvetica, "Lucida Grande", sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #1e1e1e;
@@ -39,22 +34,94 @@ h1 {
     padding: 4px 8px;
 }
 
-.main-header {
-    background-color: @header-color;
-    height: 60px;
-    display: none;
+.container {
+    margin: 0 auto;
+    width: 1440px;
 }
 
+.main-header {
+    font: 14px proximanova-regular, arial, helvetica, verdana, tahoma, sans-serif;
+    background-color: @header-color;
+    height: 60px;
+    color: white;
+    overflow: hidden;
+
+    ul {
+        li {
+            margin-right: 6px;
+            display: inline;
+        }
+        ul {
+            display: none;
+        }
+    }
+    a {
+        text-transform: uppercase;
+        color: white;
+    }
+
+    div, h1, ul.social {
+        float: left;
+    }
+
+    h1.logo {
+       background: url(../public/img/logo.png);
+       width: 161px;
+       height: 36px;
+       text-indent: -99em;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+
 .categories {
+    font: 14px proximanova-regular, arial, helvetica, verdana, tahoma, sans-serif;
     height: 44px;
     background-color: #efefef;
+    line-height: 12px;
+    border-bottom: solid 1px white;
     ul {
-        margin: 0 auto;
         li {
+            margin-right: 6px;
             display: inline;
         }
     }
     a {
         text-transform: uppercase;
     }
+}
+
+section.top {
+    height: 316px;
+    background-color: #efefef;
+
+    h3 {
+        font-size: 55px;
+    }
+}
+
+section {
+    background-color: #fff;
+    font: 14px proximanova-regular, arial, helvetica, verdana, tahoma, sans-serif;
+
+    h2 {
+        font: 32px proximanova-regular, arial, helvetica, verdana, tahoma, sans-serif;
+    }
+
+    .category {
+        overflow: hidden;
+        height: 294px;
+    }
+    article {
+            float: left;
+        }
+}
+
+footer {
+    width: 1200px;
+    background-color: @header-color;
+    margin: 0 auto;
 }
