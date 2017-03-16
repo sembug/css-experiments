@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+       rel="stylesheet"
+       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+       crossorigin="anonymous">
+    <style>
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+b, strong {
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*** RESET ***/
+
+a {
+    text-decoration: none;
+    color: black;
+    font: 18px arial;
+}
+
+.container {
+    width: 1028px;
+    margin: 0 auto;
+}
+.categories ul {
+    height: 40px;
+    text-align: center;
+    background-color: #979A87;
+    margin: 10px 10px 30px 10px;
+}
+.categories ul li {
+    margin: 0px 8px;
+    display: inline;
+    line-height: 40px;
+}
+
+.categories ul li a {
+    color: #fff;
+}
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-list article {
+    margin: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.post-list article h3 {
+    margin-top: 2px;
+}
+
+.main-header {
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+.main-header ul li {
+    margin: 0px 10px;
+    display: inline;
+}
+
+.main-header .search input{
+    height: 35px;
+    width: 300px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.main-header .logo, .menu {
+    flex-grow: 1;
+}
+
+.main-header .logo img{
+    height: 100px;
+}
+
+footer {
+    height: 40px;
+    margin: 10px 10px;
+    font: 14px arial;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="main-header">
+            <h1 class="logo">
+                <img src="public/img/logo-recipes.jpg" alt="">
+            </h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="categories">
+            <ul>
+                <li><a href="">Aves</a></li>
+                <li><a href="">Bolos</a></li>
+                <li><a href="">Carnes</a></li>
+                <li><a href="">Lanches</a></li>
+                <li><a href="">Massas</a></li>
+                <li><a href="">Peixes</a></li>
+                <li><a href="">Saladas</a></li>
+                <li><a href="">Sobremesas</a></li>
+                <li><a href="">Sopas</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <section class="post-list">
+            <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/linguinewithtunafish_70041_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article>
+            <article>
+                <a href="">
+                    <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/raymond_blancs_baked_89165_16x9.jpg" alt="">
+                    <h3>Tuna pasta sauce with linguine</h3>
+                </a>
+            </article>
+            <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/mushroom_stroganoff_with_83256_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article>
+            <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/raymond_blancs_baked_89165_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article>
+            <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/lush_lemon_pepper_19156_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article>
+            <!-- <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/raymond_blancs_baked_89165_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article>
+            <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/raymond_blancs_baked_89165_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article>
+            <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/raymond_blancs_baked_89165_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article>
+            <article>
+                <img src="http://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/raymond_blancs_baked_89165_16x9.jpg" alt="">
+                <h3><a href="">Tuna pasta sauce with linguine</a></h3>
+            </article> -->
+        </section>
+    </section>
+    <footer>
+        <div class="logo-footer">
+            <p>&copy; 2012 Recipes</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
